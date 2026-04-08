@@ -1,0 +1,22 @@
+
+  <!-- Header -->
+
+  <!-- Services Section -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Our Services</h1>
+    <div class="row">
+      <% services.forEach(service => { %>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title"><%= service.name %></h5>
+              <p class="card-text"><%= service.description %></p>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+
+  <!-- Footer -->   
+

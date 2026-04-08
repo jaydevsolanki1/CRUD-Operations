@@ -1,0 +1,79 @@
+<!-- Include Header -->
+<div class="container mt-5">
+  <!-- Page Header -->
+  <div class="text-center mb-5">
+    <h1>About Us</h1>
+    <p class="lead text-muted">
+      Learn more about our mission, vision, and team
+    </p>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img
+        src="https://wallpapers.com/images/hd/one-piece-title-logo-x6sm3qr1gxyqmrzg.jpg"
+        class="img-fluid rounded shadow"
+        alt="Our Mission"
+      />
+    </div>
+    <div class="col-md-6">
+      <h2>Our Mission</h2>
+      <p>
+        The "One Piece" is the legendary treasure left by the Pirate King, Gol
+        D. Roger, at the end of the Grand Line on the island of Laugh Tale
+      </p>
+    </div>
+  </div>
+
+  <!-- Vision Section -->
+  <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img
+        src="https://wallpapers.com/images/hd/one-piece-logo-crew-set-cd1kiqgql9qyjzp8.jpg"
+        class="img-fluid rounded shadow"
+        alt="Our Vision"
+      />
+    </div>
+    <div class="col-md-6">
+      <h2>Our Vision</h2>
+      <p>
+        The main One Piece crew, the Straw Hat Pirates, includes Captain Monkey D. Luffy, along with Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, and Jinbe. A former member is Nefertari Vivi
+      </p>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="text-center mb-4">
+    <h2>Meet Our Team</h2>
+    <p class="text-muted">The people who make it all happen</p>
+  </div>
+  <div class="row">
+    <% if (team && team.length) { %> <% team.forEach(member => { %>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 text-center shadow-sm">
+        <img
+          src="https://cdn.wallpapersafari.com/20/66/ZQH8UV.jpg"
+          class="card-img-top"
+          alt="<%= member.name %>"
+        />
+        <div class="card-body">
+          <h5 class="card-title"><%= member.name %></h5>
+          <p class="card-text text-muted"><%= member.role %></p>
+          <p class="card-text"><%= member.bio %></p>
+        </div>
+      </div>
+    </div>
+    <% }) %> <% } else { %>
+    <p class="text-center text-muted">Team information coming soon!</p>
+    <% } %>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="text-center mt-5">
+    <h3>Want to collaborate with us?</h3>
+    <a href="/contact" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+  </div>
+</div>
+
+<!-- Include Footer -->
