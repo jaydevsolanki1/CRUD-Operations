@@ -40,3 +40,12 @@ User Request → Routes → Controller → Model → Database
                                    Response
                                       ↓
                                    EJS View
+```
+## 🔄 Features
+
+-✅ Create Contact
+-✅ Read Contacts
+-✅ Update Contact
+-✅ Delete Contact
+-✅ Server-side rendering using EJS
+-✅ MVC structured architecture
