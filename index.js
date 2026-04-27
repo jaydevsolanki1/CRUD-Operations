@@ -17,10 +17,13 @@ import json from "stream/consumers";
 // import router from 'express';
 import router from "./routes/contact.route.js";
 import { connectDB } from "./config/database.js";
+import dotenv from "dotenv";
+dotenv.config();
     
 // create express app
 const app = express();
-const port = 3000;  
+// const port = 3000;  
+const port = process.env.PORT || 3000;
 
 // __dirname fix for ES modules
 const __filename = fileURLToPath(import.meta.url);
