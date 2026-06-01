@@ -16,9 +16,6 @@
   "devDependencies": {
     "nodemon": "^3.1.10"
   },
-  "engines": {
-    "node": ">=18"
-  },
   "dependencies": {
     "dotenv": "^17.4.2",
     "ejs": "^3.1.10",
