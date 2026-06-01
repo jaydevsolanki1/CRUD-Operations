@@ -202,8 +202,8 @@
 // //   console.log(`Server running at http://localhost:${port}`);
 // // });
 import express from "express";
-import expressEjsLayouts from "express-ejs-layouts";
 import path from "path";
+import expressEjsLayouts from "express-ejs-layouts";
 import { fileURLToPath } from "url";
 import router from "./routes/contact.route.js";
 import dotenv from "dotenv";
